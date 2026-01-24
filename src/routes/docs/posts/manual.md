@@ -758,6 +758,15 @@ Each voice has several oscillators, and this sets a fixed interval between them,
 ![Stride](/manual-images/osc-interval--column.svg) *tap*
  Controls the interval, in semitones, between each column of Plinky. It defaults to 7 semitones, a perfect fifth, like a Cello or Violin. The notes are always snapped to the chosen scale, even if the stride calls for chromatic notes, so Plinky does its best to choose column pitches that follow this stride while staying in-scale.
 
+
+### Videos: Interval, Pitch and Degree
+
+Nathan Plante has made a number of quick tutorials showcasing individual aspects of the Plinky / Plinky+ synth engine for his [YouTube channel](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc). Check them out below:
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/4XAEp7dq8XE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/B0eo0uxu3O8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
 ## Envelope Generator
 
 Plinky has two Envelope Generators. 
@@ -1095,7 +1104,7 @@ Sets the length of the gate of each step. The gate is the signal that determines
 
 
 
-## Video &ndash; Sequencer Deep Dive 
+## Video: Sequencer Deep Dive 
 
 
 Nathan Plante has made a great two-part deep dive into sequencing with Plinky and Plinky+.
@@ -1437,6 +1446,10 @@ Attenuator for the Accelerometer. This parameter controls how sensitive Plinky r
 
 **On Plinky+**, this paramter does nothing, because the output stage is analogue. Use the volume knob to adjust the level instead. If you need to adjust the gain of the sampler / synth voice, hold SHIFT TOP and SYNTH. You can use that in tandem with the Distortion parameter, hold SHIFT TOP and tap DISTORTION, to set how clipped you want Plinky to sound. 
 
+#### Stereo Width
+![Shift Top](/manual-images/shift-bottom.svg) *hold*
+![Volume](/manual-images/volume.svg) *tap*
+This parameter sets the stereo width. The setting is applied to the dry synth sound, not to the overall mix. So the effects from the Master Effects section, for example Reverb or Delay with a ping-pong setting, still add extra width even if this parameter is set to 0.
 
 #### Set MIDI Channels
 
@@ -1449,13 +1462,20 @@ To change the MIDI Input Channel, hold SHIFT TOP and tap the unprinted pad. Use 
 Encoder to select the MIDI input channel, ranging from 1 - 16.
 
 
-#### MIDI Input Channel
+#### MIDI Output Channel
 ![Shift Bottom](/manual-images/shift-bottom.svg) *hold*
 ![Accelrometer Sensitivity](/manual-images/blank.svg) *tap*
 To change the MIDI Output Channel, hold SHIFT BOTTOM and tap the unprinted pad.
 Use the Encoder to select the MIDI Output channel, ranging from 1 - 16.
 
 
+### Videos: External Audio, Stereo Width
+
+Here are two short videos by Nathan Plante walking you through using the external input and the stereo width parameter on Plinky / Plinky+. Also check out the Plinky playlist on his [YouTube channel](https://www.youtube.com/playlist?list=PLS8-DCzLCiFDGTGRJN0lHCSjthzdDtyEc).
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/HXCHk5FsdGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/HSBA67kG7G8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 ### That's it for the parameters!
 
@@ -1807,7 +1827,7 @@ A trigger out for each note played either by hand, Arpeggiator or Sequencer. 0 t
 A CV signal that outputs the highest amount of pressure that is currently being put on either of the strings. Corresponds to the 'pressure bar' on the right side of the screen. 0 to 5V.
 
 #### Pitch Hi / Lo Output 
-V/oct CV out. Hi outputs the pitch of the highest note, and Lo the pitch of lowest note that is currently being played.
+V/oct CV out. Hi outputs the pitch of the rightmost column (the highest string) that is currently being played. Lo outputs the pitch of leftmost column (the lowest string)  that is currently being played.
 
 #### Gate Output 
 A Gate signal. As long as one of the pads is being touched, a 5V signal is generated.
