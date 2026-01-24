@@ -217,3 +217,25 @@ Let's drop the Editor onto the track.
 Now you can use the rotary knobs and sliders to set Plinkys parameters in realtime, via MIDI.
 
 Note that this editor also integrates with [Ableton Push 2 and 3](https://www.ableton.com/en/push/) controllers.
+
+
+## OXI, Droid, Pyramid, Hapax
+
+Benjamin Fox has contributed a full list of Plinky / Plinky+ MIDI CCs & NRPNs to [midi.guide](https://midi.guide/d/plinky/plinky/). 
+
+You can download the list as CSV and as compatible files for a number of great controllers:
+- Plinky template for [OXI One](https://midi.guide/d/plinky/plinky/oxi/), 
+- Plinky template for the [Droid modules](https://midi.guide/d/plinky/plinky/dmmdm/) 
+- Plinky template for [Squarp Instruments Pyramid](https://midi.guide/d/plinky/plinky/def/) 
+- Plinky template for [Squarp Instruments Hapax](https://midi.guide/d/plinky/plinky/def/) .
+
+Thank you Benjamin for creating these files.
+
+
+## Cirklon
+
+Zifor has made a collection of MIDI Control Change (CC) mapping files (.cki format) for the Sequentix Cirklon hardware sequencer. You can find the files on the [Ziforge GitHub repo](https://github.com/Ziforge/CirklonSynthDefs).
+
+The instrument definitions enable parameter automation from the Cirklon across the Plinky and Plinky+ synthesis engine. 
+
+Thank you Zifor for creating these files.
